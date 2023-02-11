@@ -76,7 +76,7 @@ export default function MainNavber() {
                     style={{borderRight: 0}}
                   />
 
-                  <Button className='search_btn bg-transparent' type='submit' style={{ color:"#c39f57", border:"1px solid #ced4da !important" }} >
+                  <Button className='search_btn bg-transparent btn btn-outline-secondary' type='submit' style={{ color:"#c39f57"}} >
                       <i class="fa fa-search" aria-hidden="true"></i>
                   </Button>
                 </InputGroup>
