@@ -21,10 +21,9 @@ export default function MainNavber() {
               <div className='top_text d-flex' style={{ background:"#fff" }}>
                   <div className=''>
                     <ul className='d-flex'>
-                      <li><a href='#'><i class="fa-brands fa-facebook header_social_icon fs-6 me-3  rounded p-1"></i></a></li>
-                      <li><a href='#'><i class="fa-brands fa-facebook header_social_icon fs-6 me-3  rounded p-1"></i></a></li>
-                      <li><a href='#'><i class="fa-brands fa-facebook header_social_icon fs-6 me-3  rounded p-1"></i></a></li>
-                      <li><a href='#'><i class="fa-brands fa-facebook header_social_icon fs-6 me-3  rounded p-1"></i></a></li>
+                      <li><a href='#'> <i class="fa-brands fa-square-facebook header_social_icon fs-6 me-3  rounded p-1"></i> </a></li>
+                      <li><a href='#'><i class="fa-brands fa-square-instagram header_social fs-6 me-3  rounded p-1"></i></a></li>
+                      <li><a href='#'><i class="fa fa-facebook header_social_icon fs-6 me-3  rounded p-1"></i></a></li>
                     </ul>
                   </div>
                   <div class="header_news fw-normal fs-6">
@@ -68,20 +67,21 @@ export default function MainNavber() {
                 </div>
             </Col>
               <Col sm={12} md={6} lg={6}>
-                {/* <InputGroup className="mb-3">
+                <InputGroup className="mb-3">
                   <Form.Control
                     placeholder="Enter your product name.."
                     type="search"
                     aria-describedby="basic-addon2"
                     className='search_bar'
+                    style={{borderRight: 0}}
                   />
 
-                  <Button className='search_btn' type='submit' style={{ color:"#c39f57" }} >
+                  <Button className='search_btn bg-transparent' type='submit' style={{ color:"#c39f57", border:"1px solid #ced4da !important" }} >
                       <i class="fa fa-search" aria-hidden="true"></i>
                   </Button>
-                </InputGroup> */}
+                </InputGroup>
                 
-                <Form className="d-flex search_bar py-3">
+                {/* <Form className="d-flex search_bar py-3">
                   <Form.Control
                     type="search"
                     placeholder="Enter your product name.."
@@ -91,7 +91,7 @@ export default function MainNavber() {
                   <Button className='btn search_btn border-0' style={{ background:"none"}}>
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </Button>
-                </Form>
+                </Form> */}
               </Col>
               <Col sm={12} md={3} lg={3}>
                 <div className='d-flex justify-content-evenly py-3'>
@@ -118,7 +118,7 @@ export default function MainNavber() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav main_menu">
             <Nav className="m-auto menu_nav ps-0">
-              <Link to="/" className='mx-3 '>Home</Link>
+              <Link to="/" className='mx-3 '>HOME</Link>
               <Link to="/about" className='mx-3 '>ABOUT US</Link>
               <Link to="/shop" className='mx-3 '>SHOP</Link>
               <Link to="/blog" className='mx-3 '>BLOG</Link>
