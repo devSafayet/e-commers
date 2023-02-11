@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* common css start */
+a, a:hover{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ul,ol{
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+.footer_border {
+  position: relative;
+}
+
+.footer_border::after {
+  position:absolute;
+  content: '';
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  background-color: #c39f57;
+  width: 50%;
+}
+
+.footer_item a:hover {
+  color: #c39f57 !important;
+}
+
+.footer_item p:hover{
+  color: #c39f57 !important;
+}
+
+
+/* common css end */

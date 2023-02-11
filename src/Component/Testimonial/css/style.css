@@ -1,0 +1,39 @@
+.testimonial_btn {
+  border: none;
+}
+
+.testimonial_btn_2nd {
+  background: none;
+  border: none;
+}
+.testimonial_btn_2nd:hover {
+  background-color: #c39f57;
+  color: #fff !important;
+}
+.testimonial_item {
+  position: relative;
+  width: 100%;
+}
+.testimonial_overly {
+  position: absolute;
+  content: '';
+  left: 100px;
+  right: 100px;
+  top: 100px;
+  bottom: 70px;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  
+}
+
+.testimonial_overly {
+  z-index: 999999 !important;
+}
+
+/* 
+.testimonial_item:hover .testimonial_overly{
+  display: block !important;
+} */
+
+
+

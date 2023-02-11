@@ -1,0 +1,24 @@
+.newproduct_item {
+  position: relative;
+}
+.overly_newproduct {
+  position: absolute;
+  content: '';
+  left: 310px;
+  right: 0;
+  bottom: 0;
+  top: 20px;
+  display: none;
+}
+
+.newproduct_btn {
+  border: none;
+}
+
+.overly_newproduct a:hover{
+  background-color: #333333;
+}
+
+.newproduct_item:hover .overly_newproduct{
+  display: block;
+}

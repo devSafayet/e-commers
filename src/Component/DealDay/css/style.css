@@ -1,0 +1,23 @@
+/* .deal_day_text{
+  padding: 70px 0;
+} */
+
+.dealday_btn {
+  border: none;
+}
+
+.deal_scrollbar{
+  position: relative;
+  border-radius: 25px;
+  padding: 3px 0;
+}
+
+.deal_scrollbar::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 40%;
+  background:  #c39f57;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}

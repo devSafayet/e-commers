@@ -1,0 +1,7 @@
+.parallax {
+  min-height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

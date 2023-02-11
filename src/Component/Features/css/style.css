@@ -1,0 +1,10 @@
+.features_btn {
+  color: #fff;
+  background-color: #c39f57;
+  border: none;
+}
+
+.features_btn:hover{
+  border: 1 px solid #c39f57;
+  color: #fff;
+}
