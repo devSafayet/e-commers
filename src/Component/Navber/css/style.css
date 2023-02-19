@@ -62,17 +62,17 @@ ul {
   padding: 20px 0;
 }
 
-.menu_nav a{
+.menu_nav .linav{
   color: #353839;
   position: relative;
   font-weight: 600;
 }
 
-.menu_nav a:hover{
+.menu_nav .linav:hover{
   color: #c39f57 !important;
 }
 
-.menu_nav a::after{
+.menu_nav .linav::after{
   position:absolute;
   content: '';
   left: 0;
@@ -83,6 +83,10 @@ ul {
   transition: 0.40s;
 }
 
-.menu_nav a:hover::after {
+.menu_nav .linav:hover::after {
   width: 100%;
+}
+
+.active {
+  color: #c39f57 !important;
 }

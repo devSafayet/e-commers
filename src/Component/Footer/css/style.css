@@ -32,11 +32,24 @@ ul {
   width: 50%;
 }
 
-.footer_item a:hover {
+.footer_item .footer_text_hover{
+  padding-left:0;
+}
+
+.footer_item .footer_text_hover:hover {
+  color: #c39f57 !important;
+  padding-left: 10px;
+  
+}
+.footer_item .footer_p_hover{
+  transition: 60s;
+}
+
+.footer_item p:hover  {
   color: #c39f57 !important;
 }
 
-.footer_item p:hover{
+.footer_item .footer_p_hover:hover i {
   color: #c39f57 !important;
 }
 
