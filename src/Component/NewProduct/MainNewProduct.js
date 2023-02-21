@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import newproduct1 from '../NewProduct/images/products/jacket-1.jpg'
 import newproduct2 from '../NewProduct/images/products/clothes-2.jpg'
 import newproduct3 from '../NewProduct/images/products/clothes-3.jpg'
@@ -8,6 +8,7 @@ import newproduct5 from '../NewProduct/images/products/shirt-1.jpg'
 import newproduct6 from '../NewProduct/images/products/shirt-2.jpg'
 import MainTitle from '../Title/MainTitle'
 import '../NewProduct/css/style.css';
+import { NavLink } from 'react-router-dom'
 
 export default function MainNewProduct() {
   return (
@@ -28,25 +29,36 @@ export default function MainNewProduct() {
                     />
                   <div class="overly_newproduct">
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-heart fa-lg"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-share-from-square"></i>
+                        </a>
+                    </div>
+                    <div className='mb-4'>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
                     </div>
                   </div>
                 </div>
                 <div className='new_product_text py-3 ps-3'>
                   <h6 className='mb-2'>JACKET</h6>
                   <p className='mb-2'>Mens Winter Leathers Jackets</p>
-                  <p className='mb-2' style={{ color:"#c39f57" }}>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
+                  <p className='mb-2 fs-4'>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
                     </p>
                     <div className='d-flex mb-2'>
                     <div className='me-5'>
@@ -56,9 +68,9 @@ export default function MainNewProduct() {
                       <del className='fw-normal' style={{ color:"#6c757d" }} >$200.00</del>
                     </div>
                     </div>
-                    <Button className='newproduct_btn mt-4 fw-bold' style={{ background:" #c39f57" }} >
-                      ADD TO CART
-                    </Button>
+                    <div className='mt-4'>
+                      <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                    </div>
                 </div>
               </div>
             </Col>
@@ -72,25 +84,36 @@ export default function MainNewProduct() {
                     />
                     <div class="overly_newproduct">
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-heart fa-lg"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-share-from-square"></i>
+                        </a>
+                    </div>
+                    <div className='mb-4'>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
                     </div>
                   </div>
                 </div>
                 <div className='new_product_text py-3 ps-3'>
                   <h6 className='mb-2'>JACKET</h6>
                   <p className='mb-2'>Mens Winter Leathers Jackets</p>
-                  <p className='mb-2' style={{ color:"#c39f57" }}>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
+                  <p className='mb-2 fs-4'>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
                     </p>
                     <div className='d-flex mb-2'>
                     <div className='me-5'>
@@ -100,9 +123,9 @@ export default function MainNewProduct() {
                       <del className='fw-normal' style={{ color:"#6c757d" }} >$200.00</del>
                     </div>
                     </div>
-                    <Button className='newproduct_btn mt-4 fw-bold' style={{ background:" #c39f57" }} >
-                      ADD TO CART
-                    </Button>
+                    <div className='mt-4'>
+                      <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                    </div>
                 </div>
               </div>
             </Col>
@@ -116,25 +139,36 @@ export default function MainNewProduct() {
                     />
                     <div class="overly_newproduct">
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-heart fa-lg"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-share-from-square"></i>
+                        </a>
+                    </div>
+                    <div className='mb-4'>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
                     </div>
                   </div>
                 </div>
                 <div className='new_product_text py-3 ps-3'>
                   <h6 className='mb-2'>JACKET</h6>
                   <p className='mb-2'>Mens Winter Leathers Jackets</p>
-                  <p className='mb-2' style={{ color:"#c39f57" }}>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
+                  <p className='mb-2 fs-4'>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
                     </p>
                     <div className='d-flex mb-2'>
                     <div className='me-5'>
@@ -144,9 +178,9 @@ export default function MainNewProduct() {
                       <del className='fw-normal' style={{ color:"#6c757d" }} >$200.00</del>
                     </div>
                     </div>
-                    <Button className='newproduct_btn mt-4 fw-bold' style={{ background:" #c39f57" }} >
-                      ADD TO CART
-                    </Button>
+                    <div className='mt-4'>
+                      <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                    </div>
                 </div>
               </div>
             </Col>
@@ -162,25 +196,36 @@ export default function MainNewProduct() {
                     />
                     <div class="overly_newproduct">
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-heart fa-lg"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-share-from-square"></i>
+                        </a>
+                    </div>
+                    <div className='mb-4'>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
                     </div>
                   </div>
                 </div>
                 <div className='new_product_text py-3 ps-3'>
                   <h6 className='mb-2'>JACKET</h6>
                   <p className='mb-2'>Mens Winter Leathers Jackets</p>
-                  <p className='mb-2' style={{ color:"#c39f57" }}>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
+                  <p className='mb-2 fs-4'>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
                     </p>
                     <div className='d-flex mb-2'>
                     <div className='me-5'>
@@ -190,9 +235,9 @@ export default function MainNewProduct() {
                       <del className='fw-normal' style={{ color:"#6c757d" }} >$200.00</del>
                     </div>
                     </div>
-                    <Button className='newproduct_btn mt-4 fw-bold' style={{ background:" #c39f57" }} >
-                      ADD TO CART
-                    </Button>
+                    <div className='mt-4'>
+                      <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                    </div>
                 </div>
               </div>
             </Col>
@@ -206,25 +251,36 @@ export default function MainNewProduct() {
                     />
                      <div class="overly_newproduct">
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-heart fa-lg"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-share-from-square"></i>
+                        </a>
+                    </div>
+                    <div className='mb-4'>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
                     </div>
                   </div>
                 </div>
                 <div className='new_product_text py-3 ps-3'>
                   <h6 className='mb-2'>JACKET</h6>
                   <p className='mb-2'>Mens Winter Leathers Jackets</p>
-                  <p className='mb-2' style={{ color:"#c39f57" }}>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
+                  <p className='mb-2 fs-4'>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
                     </p>
                     <div className='d-flex mb-2'>
                     <div className='me-5'>
@@ -234,9 +290,9 @@ export default function MainNewProduct() {
                       <del className='fw-normal' style={{ color:"#6c757d" }} >$200.00</del>
                     </div>
                     </div>
-                    <Button className='newproduct_btn mt-4 fw-bold' style={{ background:" #c39f57" }} >
-                      ADD TO CART
-                    </Button>
+                    <div className='mt-4'>
+                      <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                    </div>
                 </div>
               </div>
             </Col>
@@ -250,25 +306,36 @@ export default function MainNewProduct() {
                     />
                      <div class="overly_newproduct">
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-heart fa-lg"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-eye"></i>
+                        </a>
                     </div>
                     <div className='mb-4'>
-                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-regular fa-share-from-square"></i>
+                        </a>
+                    </div>
+                    <div className='mb-4'>
+                        <a href="#" className='rounded border p-2' style={{ color:"#6c757d" }}>
+                          <i class="fa-solid fa-cart-arrow-down"></i>
+                        </a>
                     </div>
                   </div>
                 </div>
                 <div className='new_product_text py-3 ps-3'>
                   <h6 className='mb-2'>JACKET</h6>
                   <p className='mb-2'>Mens Winter Leathers Jackets</p>
-                  <p className='mb-2' style={{ color:"#c39f57" }}>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
+                  <p className='mb-2 fs-4'>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                      <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
                     </p>
                     <div className='d-flex mb-2'>
                     <div className='me-5'>
@@ -278,9 +345,9 @@ export default function MainNewProduct() {
                       <del className='fw-normal' style={{ color:"#6c757d" }} >$200.00</del>
                     </div>
                     </div>
-                    <Button className='newproduct_btn mt-4 fw-bold' style={{ background:" #c39f57" }} >
-                      ADD TO CART
-                    </Button>
+                    <div className='mt-4'>
+                      <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                    </div>
                 </div>
               </div>
             </Col>

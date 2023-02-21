@@ -36,7 +36,8 @@ export default function MainNavber() {
                   </div>
               </div>
               <div className='flex'>
-                <p className='fw-normal fs-6' style={{ color:"#6c757d" }}>Example@Gmail.Com</p>
+                <i class="fa-solid fa-location-dot header_social_icon fs-6 me-2 rounded p-1"></i>
+                <NavLink to="/" className='fw-normal fs-6' style={{ color:"#6c757d" }}>Order Tracking</NavLink>
               </div>
             </div>
         </Row>
@@ -45,7 +46,7 @@ export default function MainNavber() {
 
     {/* logo part */}
 
-      <Navbar expand="lg" className="py-2 nav_Logo border-bottom">
+      <Navbar expand="lg" className="py-2 nav_Logo border-bottom ">
         <Container>
           <Navbar.Brand className="m-auto" href="/">
           <img
@@ -82,33 +83,21 @@ export default function MainNavber() {
                       <i class="fa fa-search" aria-hidden="true"></i>
                   </Button>
                 </InputGroup>
-                
-                {/* <Form className="d-flex search_bar py-3">
-                  <Form.Control
-                    type="search"
-                    placeholder="Enter your product name.."
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button className='btn search_btn border-0' style={{ background:"none"}}>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </Button>
-                </Form> */}
               </Col>
               <Col sm={12} md={3} lg={3}>
                 <div className='d-flex justify-content-evenly py-2'>
-                  <button className='border-0' style={{ background:"none" }}>
+                  <NavLink to="/login" className='border-0' style={{ background:"none" }}>
                     <i class="fa fa-user fs-2 header_icon" style={{ color:"#6c757d" }}  aria-hidden="true"></i>
-                  </button>
-                  <button className='border-0' style={{ background:"none" }}>
+                  </NavLink>
+                  <NavLink to="/wishlist" className='border-0' style={{ background:"none" }}>
                     <i class="fa fa-heart fs-2 header_icon" style={{ color:"#6c757d"}} aria-hidden="true"></i>
-                  </button>
-                  {/* <button className='border-0' style={{ background:"none" }}>
+                  </NavLink>
+                  <NavLink to="/add_card" className='border-0' style={{ background:"none" }}>
                     <i class="fa fa-shopping-bag fs-2 header_icon" style={{ color:"#6c757d"}} aria-hidden="true">
                     </i>
-                  </button> */}
+                  </NavLink>
                 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                   Launch demo modal
                 </button>
 
@@ -130,7 +119,7 @@ export default function MainNavber() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 </div>
               </Col>
           </Row>

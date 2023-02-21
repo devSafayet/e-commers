@@ -38,21 +38,20 @@ export default function MainTestimonial() {
               </div>
             </Col>
             <Col sm={12} md={6}>
-              <div className='testimonial_item border rounded text-center'>
-                    <img src={img3}
-                     width="100%"
-                    />
-                  <div className='testimonial_overly my-3'>
-                  <Button className='testimonial_btn' style={{ background:"#333333" }} >
-                      25% Discount
-                  </Button>
-                    <h2 className='fs-3 fw-semibold my-2' style={{ color:"#6c757d" }}>Summer Collection</h2>
-                    <p className='mb-2' style={{ color:"#6c757d" }}>Starting @ $10</p>
-                    <Button className='testimonial_btn_2nd fw-bolder fs-5 text-uppercase' style={{ color:"#6c757d" }}>
-                    Shop now
-                    </Button>
-                  </div>
+              <div
+              className="testimonial_item d-flex justify-content-center broder rounded align-items-center "
+              style={{ backgroundImage: `url(${img3})` }}
+            >
+              <div className="testimonial_overly text-center bg-white p-5 border rounded border-0 opacity-75">
+                <Button variant="dark">25% Discount</Button>
+                <a href="#">
+                  <h5 className="text-dark pt-2">Summer collection</h5>
+                </a>
+                <a href="#" className="text-light-emphasis">
+                  SHOP NOW
+                </a>
               </div>
+            </div>
             </Col>
             <Col sm={12} md={3}>
             <div className='rounded'>
@@ -67,7 +66,9 @@ export default function MainTestimonial() {
               <div className='testimonial_item border rounded py-3 px-3'>
                   <div className='testimonial_services d-flex align-item-between my-4'>
                     <div>
-                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}>
+                        <i class="fa-solid fa-ship"></i>
+                      </a>
                     </div>
                     <div>
                       <h4 className='fw-semibold fs-6' style={{ color:"#6c757d" }}>Worldwide Delivery</h4>
@@ -76,7 +77,9 @@ export default function MainTestimonial() {
                   </div>
                   <div className='testimonial_services d-flex align-item-between mb-4'>
                     <div>
-                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}>
+                        <i class="fa-sharp fa-solid fa-rocket"></i>
+                      </a>
                     </div>
                     <div>
                       <h4 className='fw-semibold fs-6' style={{ color:"#6c757d" }}>Next Day delivery</h4>
@@ -85,7 +88,9 @@ export default function MainTestimonial() {
                   </div>
                   <div className='testimonial_services d-flex align-item-between mb-4'>
                     <div>
-                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}>
+                        <i class="fa-solid fa-phone"></i>
+                      </a>
                     </div>
                     <div>
                       <h4 className='fw-semibold fs-6' style={{ color:"#6c757d" }}>Best Online Support</h4>
@@ -94,7 +99,9 @@ export default function MainTestimonial() {
                   </div>
                   <div className='testimonial_services d-flex align-item-between mb-4'>
                     <div>
-                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}>
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                      </a>
                     </div>
                     <div>
                       <h4 className='fw-semibold fs-6' style={{ color:"#6c757d" }}>Return Policy</h4>
@@ -103,7 +110,9 @@ export default function MainTestimonial() {
                   </div>
                   <div className='testimonial_services d-flex align-item-between mb-4'>
                     <div>
-                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}><i class="fa fa-star" aria-hidden="true"></i></a>
+                      <a href='#' className=' fs-3 me-3' style={{ color:"#6c757d" }}>
+                        <i class="fa-solid fa-ticket"></i>
+                      </a>
                     </div>
                     <div>
                       <h4 className='fw-semibold fs-6' style={{ color:"#6c757d" }}>30% money back</h4>

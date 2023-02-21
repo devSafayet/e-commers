@@ -4,22 +4,18 @@
 .overly_newproduct {
   position: absolute;
   content: '';
-  left: 310px;
   right: 0;
-  bottom: 0;
   top: 20px;
-  display: none;
+  transition: all 0.6s;
+  opacity: 0;
 }
 
-.newproduct_btn {
-  border: none;
-}
-
-.overly_newproduct a:hover{
-  background-color: #333333;
+.newproduct_item a:hover{
+  background-color: #333333 !important;
 }
 
 .newproduct_item:hover .overly_newproduct{
-  display: block;
+  right: 15px;
+  opacity: 1;
   
 }

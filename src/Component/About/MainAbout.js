@@ -6,6 +6,7 @@ import product1 from "../About/images/ilyn/product-1.webp";
 import product2 from "../About/images/ilyn/product-2.webp";
 import product3 from "../About/images/ilyn/product-3.webp";
 import "../About/css/style.css";
+import { NavLink } from "react-router-dom";
 
 export default function MainAbout() {
   return (
@@ -37,14 +38,9 @@ export default function MainAbout() {
                           src={product1}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
@@ -57,14 +53,9 @@ export default function MainAbout() {
                           src={product2}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
@@ -77,14 +68,9 @@ export default function MainAbout() {
                           src={product3}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                   </Row>
@@ -103,14 +89,9 @@ export default function MainAbout() {
                           src={product1}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
@@ -123,14 +104,9 @@ export default function MainAbout() {
                           src={product2}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
@@ -143,14 +119,9 @@ export default function MainAbout() {
                           src={product3}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                   </Row>
@@ -169,14 +140,9 @@ export default function MainAbout() {
                           src={product1}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                       <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
@@ -189,14 +155,9 @@ export default function MainAbout() {
                           src={product2}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                     <Col sm={12} md={4} lg={4}>
@@ -209,14 +170,9 @@ export default function MainAbout() {
                           src={product3}
                           alt="First slide"
                         />
-                        <Button
-                          className="dealday_btn mt-4 about_btn"
-                          style={{ background: " #c39f57" }}
-                        >
-                          Details
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                        </Button>
+                        <div className="ms-4 mt-4">
+                          <NavLink className="fw-bold rounded p-2 mb-4" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                        </div>
                       </div>
                     </Col>
                   </Row>

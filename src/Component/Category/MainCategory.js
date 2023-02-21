@@ -5,6 +5,7 @@ import icon2 from '../Category/images/icons/coat.svg';
 import icon3 from '../Category/images/icons/glasses.svg';
 import icon4 from '../Category/images/icons/shorts.svg';
 import MainTitle from '../Title/MainTitle';
+import { NavLink } from 'react-router-dom';
 
 export default function MainCategory() {
   return (
@@ -25,7 +26,7 @@ export default function MainCategory() {
                   </div>
                   <div className='ms-1'>
                     <h5 className='fs-6 mb-4' style={{ color:"#333333" }}>DRESS & FROCK</h5>
-                    <a href='#' style={{ color:"#c39f57" }}>Show All</a>
+                    <NavLink to="/shop" style={{ color:"#c39f57" }}>Show All</NavLink>
                   </div>
                 </div>
               </Col>
@@ -42,7 +43,7 @@ export default function MainCategory() {
                   </div>
                   <div className='ms-1'>
                     <h5 className='fs-6 mb-4' style={{ color:"#333333" }}>WINTER WEAR</h5>
-                    <a href='#' style={{ color:"#c39f57" }}>Show All</a>
+                    <NavLink to="/shop" style={{ color:"#c39f57" }}>Show All</NavLink>
                   </div>
                 </div>
               </Col>
@@ -59,7 +60,7 @@ export default function MainCategory() {
                   </div>
                   <div className='ms-1'>
                     <h5 className='fs-6 mb-4' style={{ color:"#333333" }}>GLASSES & LENS</h5>
-                    <a href='#' style={{ color:"#c39f57" }}>Show All</a>
+                    <NavLink to="/shop" style={{ color:"#c39f57" }}>Show All</NavLink>
                   </div>
                 </div>
               </Col>
@@ -76,7 +77,7 @@ export default function MainCategory() {
                   </div>
                   <div className='ms-1'>
                     <h5 className='fs-6 mb-4' style={{ color:"#333333" }}>SHORTS & JEANS</h5>
-                    <a href='#' style={{ color:"#c39f57" }}>Show All</a>
+                    <NavLink to="/shop" style={{ color:"#c39f57" }}>Show All</NavLink>
                   </div>
                 </div>
               </Col>

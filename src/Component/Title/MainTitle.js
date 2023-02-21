@@ -4,7 +4,7 @@ import { Container, Row } from 'react-bootstrap'
 export default function MainTitle(props) {
   return (
     <>
-      <div className='py-5'>
+      <div className='py-4'>
         <Container>
           <Row>
             <div className='border-bottom'>

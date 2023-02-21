@@ -3,6 +3,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import deal_img1 from '../DealDay/images/KF3.webp';
 import '../DealDay/css/style.css';
 import MainTitle from '../Title/MainTitle';
+import { NavLink } from 'react-router-dom';
 
 export default function MainDealDay() {
   return (
@@ -22,13 +23,13 @@ export default function MainDealDay() {
             </Col>
             <Col sm={12} md={6}>
               <div className='deal_day_text'>
-                <p className='mb-3' style={{ color:"#c39f57" }}>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                </p>
+              <p className='mb-3 fs-4'>
+                <i class="fa-solid fa-star text-warning fa-sm"></i>
+                <i class="fa-solid fa-star text-warning fa-sm"></i>
+                <i class="fa-solid fa-star text-warning fa-sm"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+                <i class="fa-solid fa-star-half-stroke text-warning fa-sm"></i>
+              </p>
                 <h5 className='mb-3' style={{ color:"#3333333" }}>SHAMPOO, CONDITIONER & FACEWASH PACKS</h5>
                 <p className='mb-3' style={{ color:"#6c757d" }}>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet consectetur Lorem ipsum dolor</p>
                 <div className='d-flex mb-3'>
@@ -39,9 +40,9 @@ export default function MainDealDay() {
                   <del className='fw-normal fs-4' style={{ color:"#6c757d" }} >$200.00</del>
                 </div>
                 </div>
-                <Button className='mb-3 dealday_btn fw-bold' style={{ background:" #c39f57" }} >
-                ADD TO CART
-                </Button>
+                <div className='mb-3'>
+                  <NavLink className="fw-bold rounded p-2" style={{ background:"#c39f57", color:"#fff" }} to ="/add_card"> ADD TO CART</NavLink>
+                </div>
                 <p className='mb-3' style={{ color:"#3333333" }} >ALREADY SOLD: <span className='fw-bolder'>20</span></p>
 
               <div className='deal_scrollbar mb-3 .progress-bar-warning' style={{ background:"#ced4da" }}></div>

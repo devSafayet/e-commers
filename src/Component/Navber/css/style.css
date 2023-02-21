@@ -35,22 +35,6 @@ ul {
 /* search part */
 
 
-/* .search_btn{
-  color: #6c757d;
-} */
-/* 
-.search_btn:hover{
-  color: #c39f57;
-} */
-
-/* .search_bar{
-  position: relative;
-} */
-
-/* .search_btn {
-  right: 2%;
-  position: absolute;
-} */
 
 .header_icon:hover {
   color: #c39f57 !important;
@@ -90,3 +74,4 @@ ul {
 .active {
   color: #c39f57 !important;
 }
+
