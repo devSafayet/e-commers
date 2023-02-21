@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { Link, useNavigate, NavLink } from 'react-router-dom';
-import auth from '../../firebase.init';
+import auth from '../../Firebase.init';
 import Loading from '../Loading/Loading';
 
 export default function MainRegister() {

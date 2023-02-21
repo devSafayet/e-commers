@@ -7,7 +7,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 // import UseToken from '../../Hooks/UseToken';
 // import Loading from '../../Shared/Loading/Loading';
-import auth from '../../firebase.init';
+import auth from '../../Firebase.init';
 import Loading from '../Loading/Loading';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'

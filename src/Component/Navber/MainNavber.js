@@ -8,8 +8,17 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link, NavLink } from 'react-router-dom';
 import '../Navber/css/style.css';
+import auth from '../../Firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
 export default function MainNavber() {
+  const [user] = useAuthState(auth);
+
+    const logOut = () => {
+        signOut(auth);
+        localStorage.removeItem("accessToken")
+    };
   return (
     <>
 
@@ -35,10 +44,25 @@ export default function MainNavber() {
                   </p>
                   </div>
               </div>
+              
+            <div className='d-flex gap-3 justify-content-center align-items-center'>
+              <div>
+              {/* <NavLink to="/login" className='fw-normal fs-6'>Login</NavLink> */}
+             
+                  <li>{
+                    user
+                        ?
+                        <Link to="/Login" onClick={logOut}>SignOut</Link>
+                        :
+                        <Link to='/Login'>Login</Link>
+                }</li>
+               
+              </div>
               <div className='flex'>
                 <i class="fa-solid fa-location-dot header_social_icon fs-6 me-2 rounded p-1"></i>
                 <NavLink to="/" className='fw-normal fs-6' style={{ color:"#6c757d" }}>Order Tracking</NavLink>
               </div>
+            </div>
             </div>
         </Row>
       </Container>

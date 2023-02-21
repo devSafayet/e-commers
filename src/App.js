@@ -11,8 +11,9 @@ import MainLogin from './Component/Login/MainLogin';
 import MainRegister from './Component/Register/MainRegister';
 import MainWishList from './Component/Wishlist/MainWishList';
 import MainAddToCard from './Component/AddToCard/MainAddToCard';
-import MainSign from './Component/SignIn/MainSign';
-import SignUp from './Component/SignUp/SignUp';
+import Login from './Component/Auth/Login';
+import Register from './Component/Auth/Register';
+import RequireAuth from './Component/Auth/RequireAuth';
 
 function App() {
   return (
@@ -23,12 +24,15 @@ function App() {
           <Route path='/about' element={<AboutPage/>}/>
           <Route path='/shop' element={<ShopPage/>}/>
           <Route path='/blog' element={<BlogPage/>}/>
-          <Route path='/blog-details/:id' element={<MainBlogDetails/>}/>
+          <Route path='/blog-details/:id' element={
+          
+              <MainBlogDetails/>
+         
+          }/>
           <Route path='/contact' element={<ContactPage/>}/>
-          <Route path='/signin' element={<MainSign/>}/>
-          <Route path='/signup' element={<SignUp/>}/>
-          <Route path='/login' element={<MainLogin/>}/>
-          <Route path='/register' element={<MainRegister/>}/>
+          <Route path='/login' element={<Login/>}/>
+          {/* <Route path='/mainlogin' element={<MainLogin/>}/> */}
+          <Route path='/register' element={<Register />}/>
           <Route path='/wishlist' element={<MainWishList/>}/>
           <Route path='/add_card' element={<MainAddToCard/>}/>
         </Routes>

@@ -1,7 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
+import { getAuth } from 'firebase/auth';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -14,11 +13,17 @@ const firebaseConfig = {
   storageBucket: "yan-horizon.appspot.com",
   messagingSenderId: "75563914763",
   appId: "1:75563914763:web:04fd9bceef3023bba6190e",
-  measurementId: "G-VMQX4CG6SL"
+  /* apiKey: "AIzaSyCc6NazLkxb1ZAuhTWuuvubU1-kVxkVhgM",
+  authDomain: "yan-horizon-4d76f.firebaseapp.com",
+  projectId: "yan-horizon-4d76f",
+  storageBucket: "yan-horizon-4d76f.appspot.com",
+  messagingSenderId: "807570554378",
+  appId: "1:807570554378:web:10a95a31aac1193283e9f3" */
 };
 
 // Initialize Firebase
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAnalytics(app);
+const auth = getAuth(app)
 
 export default auth;
